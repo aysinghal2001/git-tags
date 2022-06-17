@@ -1,1 +1,3 @@
 Second file also changed
+
+tag 1.0.1 file changed
