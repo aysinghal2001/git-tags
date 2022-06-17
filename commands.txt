@@ -1,0 +1,29 @@
+git init
+$ git remote add origin https://github.com/aysinghal2001/git-tags.git
+$ touch file1.txt file2.txt
+$ git add .
+$ git commit -m "First commit"
+$ git tag 1.0.0
+start file1.txt
+start file2.txt
+$ git add .
+$ git commit -m "Second commit"
+$ git tag 1.0.1
+$ git tag -l
+$ touch file3.txt
+$ git add .
+$ git commit -m "Third commit"
+$ git tag 1.1.0
+$ git checkout -b second_release 1.0.1
+$ start file1.txt
+$ start file2.txt
+$ git add .
+$ git commit -m "Changes done"
+$ git tag 1.0.2
+$ git checkout -b third_release 1.1.0
+$ start file2.txt
+$ git add .
+$ git commit -m " Changes done on tag 1.1.0"
+$ git tag 1.1.1
+$ git push origin --all
+$ git push --tags
